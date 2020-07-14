@@ -36,8 +36,11 @@ let age = 65;
 let isChild = age <= 7; 
 let isSenior  = age >= 65 ; 
 
+
+
+// challenge 
 if (age >=65) { 
-    console.log('you are a senior') 
+    console.log('you are a senior.') 
 }else { 
     console.log('you are not a senior')
 }; 
