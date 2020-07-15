@@ -1,4 +1,4 @@
-// Challenge
+// CHALLENGE
 let myAccount = {
     name: 'Luke',
     expenses: 0,
@@ -34,10 +34,8 @@ let getAccountSummary = function (account) {
     };
 };
 
-let h = getAccountSummary(myAccount) 
-console.log(h)
-
-
+let h = getAccountSummary(myAccount);
+console.log(h);
 
 // functions to add:
 // add income to account (account, amount of income)
