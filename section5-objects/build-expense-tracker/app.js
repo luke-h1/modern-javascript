@@ -7,39 +7,42 @@ let myAccount = {
 
 let addExpense = function (account, amount) {
     // add expense function
-    account.expenses = account.expenses + amount;
+    return account.expenses = account.expenses + amount; 
 };
-
-addExpense(myAccount, 500);
 
 let addIncome = function (account, income) {
     // add income function
-    account.income = account.income + income;
+    return account.income = account.income + income;
 };
-addIncome(myAccount, 1000);
 
 let resetAccount = function (account) {
     // reset account function
-    account.income = 0;
-    account.expenses = 0;
+     account.income = 0;
+     account.expenses = 0;
 };
 
 let getAccountBalance = function (account) {
     // get account balance function
-    let balance = account.income - account.expenses;
-    {
-        return balance;
-    }
+    return balance = account.income - account.expenses;
+ 
 };
 
 let getAccountSummary = function (account) {
-    let balance = account.income - account.expenses;
-     return `${account.name} has an income of ${
-        account.income
-    }, expenses of ${account.expenses} and a balance of ${getAccountBalance(
-        myAccount
-    )}`;
+    return `${account.name} has an income of ${account.income}, expenses of ${
+        account.expenses
+    } and a balance of ${getAccountBalance(myAccount)}`;
 };
 
-let r = getAccountSummary(myAccount);
-console.log(r);
+let a = addExpense(myAccount, 500);
+console.log(a);
+
+let b = addIncome(myAccount, 1000);
+console.log(b);
+
+let c = getAccountBalance(myAccount);
+console.log(c);
+
+let d = getAccountSummary(myAccount);
+console.log(d);
+
+addIncome(myAccount, 1000);
