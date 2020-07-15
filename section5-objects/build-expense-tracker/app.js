@@ -1,4 +1,4 @@
-// Challenge
+// CHALLENGE
 let myAccount = {
     name: 'Luke',
     expenses: 0,
@@ -7,45 +7,42 @@ let myAccount = {
 
 let addExpense = function (account, amount) {
     // add expense function
-    account.expenses = account.expenses + amount;
+    return account.expenses = account.expenses + amount; 
 };
-
-addExpense(myAccount, 2.5);
-console.log(myAccount);
 
 let addIncome = function (account, income) {
     // add income function
-    account.income = account.income + income;
+    return account.income = account.income + income;
 };
-addIncome(myAccount, 200);
-console.log(myAccount);
 
 let resetAccount = function (account) {
     // reset account function
-    account.income = 0;
-    account.expenses = 0;
+     account.income = 0;
+     account.expenses = 0;
 };
-resetAccount(myAccount);
-console.log(myAccount);
+
+let getAccountBalance = function (account) {
+    // get account balance function
+    return balance = account.income - account.expenses;
+ 
+};
 
 let getAccountSummary = function (account) {
-    return {
-        summary: `The account owner is ${account.name}, their expenses are: ${account.expenses} and their income is ${account.income}`,
-    };
+    return `${account.name} has an income of ${account.income}, expenses of ${
+        account.expenses
+    } and a balance of ${getAccountBalance(myAccount)}`;
 };
 
-let h = getAccountSummary(myAccount) 
-console.log(h)
+let a = addExpense(myAccount, 500);
+console.log(a);
 
+let b = addIncome(myAccount, 1000);
+console.log(b);
 
+let c = getAccountBalance(myAccount);
+console.log(c);
 
-// functions to add:
-// add income to account (account, amount of income)
-// resetAccount (account, expense) = 0
-// getAccountSummary template string (account, expenses, income) return string and print with console.log()
+let d = getAccountSummary(myAccount);
+console.log(d);
 
-// add income
-// add expense x2
-// check account with getAccountSummary
-// resetAccount
-// getAccountSummary
+addIncome(myAccount, 1000);
