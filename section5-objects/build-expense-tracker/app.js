@@ -7,7 +7,7 @@ let myAccount = {
 
 let addExpense = function (account, amount) {
     // add expense function
-    return account.expenses = account.expenses + amount; 
+    return account.expenses = account.expenses + amount;  
 };
 
 let addIncome = function (account, income) {
@@ -28,9 +28,9 @@ let getAccountBalance = function (account) {
 };
 
 let getAccountSummary = function (account) {
-    return `${account.name} has an income of ${account.income}, expenses of ${
+    return `${account.name} has an income of £${account.income}, expenses of £${
         account.expenses
-    } and a balance of ${getAccountBalance(myAccount)}`;
+    } and a balance of £${getAccountBalance(myAccount)}`;
 };
 
 let a = addExpense(myAccount, 500);
@@ -44,5 +44,7 @@ console.log(c);
 
 let d = getAccountSummary(myAccount);
 console.log(d);
-
 addIncome(myAccount, 1000);
+
+
+
