@@ -4,8 +4,8 @@
 // call function 
 // console.log it 
 
-let calculation = function (score, totalScore) { 
-    let percent = (score / totalScore) * 100  
+const calculation = function (score, totalScore) { 
+    const percent = (score / totalScore) * 100  
     let letterGrade = '' 
 
     if (percent >=90) {  
@@ -25,5 +25,6 @@ let calculation = function (score, totalScore) {
 }; 
 
 
-let result = calculation(16, 20)
+let result = calculation(11, 20)
 console.log(result);  
+ 
