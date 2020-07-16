@@ -16,6 +16,8 @@ console.log(randomNum);
 // console.log(makeGuess(1))  = return true if true return false if wrong
 
 let getGuess = function (guess) {
+    let min = 1;
+    let max = 10;
     let num = Math.floor(Math.random() * (min - max + 1)) + min;
     if (num === guess) {
         return `your guess was right. The result was ${num}`;
