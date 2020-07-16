@@ -33,4 +33,7 @@ let isValidPassword = function (password) {
 };
 
 let a = isValidPassword('thisisatest');
-console.log(a);
+let b = isValidPassword('password123')
+console.log(a); 
+console.log(b); 
+
