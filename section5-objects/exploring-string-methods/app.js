@@ -26,11 +26,14 @@ let isValidPassword = function (password) {
     if (password.includes('password') || password.length < 8) {
         console.log('password is not valid');
         return false;
-    } else { 
+    } else if (password.length > 8 && !password.includes('password')){ 
         console.log('password is valid')
         return true;
     }
 };
 
 let a = isValidPassword('thisisatest');
-console.log(a);
+let b = isValidPassword('password123')
+console.log(a); 
+console.log(b); 
+
