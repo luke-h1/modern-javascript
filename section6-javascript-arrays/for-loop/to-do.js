@@ -17,13 +17,23 @@ toDo.splice(2, 1); // removes "learn javascript"
 toDo.push('get Coffee');
 toDo.shift(1);
 console.log(toDo);
-console.clear() 
+console.clear();
 // challenge forEach:
 // print items left to-do ✅
-// 1. the first item, 2.second item ✅ 
+// 1. the first item, 2.second item ✅
 // make sure array starts at 1 instead of 0 ✅
 
 toDo.forEach(function (toDo, index) {
     const num = index + 1;
-    console.log(`${num}. ${toDo}`); 
+    console.log(`${num}. ${toDo}`);
 });
+console.clear();
+console.clear();
+
+// CHALLENGE (for loop):
+
+for (let count = 0; count < toDo.length; count++) {
+    const num = count + 1;
+    console.log(`${num}. ${toDo[count]}`);
+    // console.log(num +'. ' + toDo[count]);
+}
