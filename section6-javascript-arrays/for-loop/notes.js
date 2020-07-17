@@ -20,10 +20,9 @@ notes.forEach(function (item, index) {
 // counting ...count, 1, 2, 3
 
 for (let count = 0; count <= 2; count++) {
-    console.log(count)
-} 
+    console.log(count);
+}
 
-for (let count = 0 ; count < notes.length ; count++) {
-    console.log(notes) 
-
+for (let count = 0; count < notes.length; count++) {
+    notes[count] 
 }
