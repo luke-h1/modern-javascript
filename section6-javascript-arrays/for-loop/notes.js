@@ -24,5 +24,5 @@ for (let count = 0; count <= 2; count++) {
 }
 
 for (let count = 0; count < notes.length; count++) {
-    notes[count] 
+    console.log(notes[count]) 
 }
